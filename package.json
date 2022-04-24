@@ -1,0 +1,34 @@
+{
+  "name": "img-lazy-load",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development rollup -c rollup.config.dev.js -w",
+    "build": "NODE_ENV=production rollup -c",
+    "start": "npm run dev",
+    "arthur": "npm run build"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/handan0409/hd-cookie"
+  },
+  "keywords": [
+    "lazy",
+    "懒加载",
+    "img"
+  ],
+  "author": "handan",
+  "dependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-replace": "^3.1.0",
+    "rollup": "^2.67.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
